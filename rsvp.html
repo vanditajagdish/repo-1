@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RSVP · Saloni &amp; Kunwar</title>
+  <meta name="description" content="Kindly let us know if you can join us — RSVP by 1st November 2026.">
+  <meta name="theme-color" content="#2a0910">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="monogram gold" href="index.html" aria-label="Saloni and Kunwar — home">S<span>&amp;</span>K</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="celebrations.html">Celebrations</a></li>
+          <li><a href="travel.html">Travel &amp; Stay</a></li>
+          <li><a href="rsvp.html" aria-current="page">RSVP</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <img class="corner tl" src="assets/img/corner.svg" alt="">
+      <img class="corner tr" src="assets/img/corner.svg" alt="">
+      <div class="reveal">
+        <span class="eyebrow">Kindly reply by 1<sup>st</sup> November 2026</span>
+        <h1 class="script gold">RSVP</h1>
+        <p class="lede">It would mean the world to have you with us. Let us know which celebrations you can join.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap rsvp-wrap">
+        <!--
+          To collect replies online, set data-endpoint to a form service URL,
+          e.g. data-endpoint="https://formspree.io/f/xxxxxxx".
+          Without it, replies open as a pre-filled email to data-email.
+        -->
+        <form id="rsvp-form" class="panel reveal" data-endpoint="" data-email="rsvp@example.com" novalidate>
+          <div class="form-grid">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="As on your invitation" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="phone">Phone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91">
+            </div>
+            <div data-if-yes>
+              <label for="guests">Number of guests</label>
+              <select id="guests" name="guests">
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              </select>
+            </div>
+
+            <fieldset class="full">
+              <legend>Will you be joining us?</legend>
+              <div class="choice">
+                <label><input type="radio" name="attending" value="Joyfully accepts" required><span>Joyfully accepts</span></label>
+                <label><input type="radio" name="attending" value="Regretfully declines"><span>Regretfully declines</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-if-yes>
+              <legend>Celebrations you’ll attend</legend>
+              <div class="choice">
+                <label><input type="checkbox" name="events" value="Mehendi" checked><span>Mehendi</span></label>
+                <label><input type="checkbox" name="events" value="Haldi" checked><span>Haldi</span></label>
+                <label><input type="checkbox" name="events" value="Sangeet" checked><span>Sangeet</span></label>
+                <label><input type="checkbox" name="events" value="Wedding" checked><span>Wedding</span></label>
+                <label><input type="checkbox" name="events" value="Reception" checked><span>Reception</span></label>
+              </div>
+            </fieldset>
+
+            <div class="full" data-if-yes>
+              <label for="diet">Dietary requirements</label>
+              <input id="diet" name="diet" type="text" placeholder="Vegetarian, Jain, allergies…">
+            </div>
+
+            <div class="full">
+              <label for="message">A note for the couple</label>
+              <textarea id="message" name="message" placeholder="Wishes, song requests, or anything we should know"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send RSVP</button>
+          </div>
+          <p class="form-note">Formal invitations to follow.</p>
+        </form>
+
+        <div id="rsvp-thanks" class="panel thanks" hidden>
+          <img class="sprig" src="assets/img/sprig.svg" alt="">
+          <h2 class="script gold">Thank you</h2>
+          <p style="color:var(--blush-dim)">Your reply means so much to us. We can’t wait to celebrate together.</p>
+          <p class="signoff gold">Saloni &amp; Kunwar</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Questions</span>
+          <h2 class="script gold">Good to know</h2>
+        </div>
+        <div class="faq reveal d1">
+          <details>
+            <summary>Can I bring a plus one?</summary>
+            <p>Your invitation will list everyone we’ve reserved seats for. If you have any questions, please reach out to us directly.</p>
+          </details>
+          <details>
+            <summary>Are children welcome?</summary>
+            <p>Of course — little ones are very welcome at all of the celebrations.</p>
+          </details>
+          <details>
+            <summary>Is there parking at the venue?</summary>
+            <p>Yes, valet parking is available at The Club for all events. We also recommend the hotel shuttles.</p>
+          </details>
+          <details>
+            <summary>Do you have a gift registry?</summary>
+            <p>Your presence is the greatest gift. If you’d still like to give something, a blessing in any form is warmly received.</p>
+          </details>
+          <details>
+            <summary>Who can I contact with questions?</summary>
+            <p>Write to us at <a href="mailto:rsvp@example.com">rsvp@example.com</a> and we’ll get back to you.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="sprig" src="assets/img/sprig.svg" alt="">
+    <p class="names script gold">Saloni &amp; Kunwar</p>
+    <p class="caps">2<sup>nd</sup> December 2026 · The Club, Juhu · Mumbai</p>
+    <div class="next"><a class="btn ghost" href="index.html">Back to home</a></div>
+    <small>#SaloniWedsKunwar</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
